@@ -1,0 +1,78 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 120px;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-logo p{
+    color: #383838;
+    font-size: 46px;
+    font-weight: 700;
+}
+.footer-links{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: #252525;
+    font-size: 20px;
+}
+.footer-links li{
+    cursor: pointer;
+}
+.footer-social-icon{
+    display: flex;
+    gap: 20px;
+}
+.footer-icons-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+    padding: 10px; /* Adjust padding */
+    background: #fbfbfb;
+    border: 1px solid #007BFF;
+    /* cursor: pointer; */
+    border-radius: 50%; /* Optional: make it circular */
+}
+
+.footer-icons-container  {
+    font-size: 24px; /* Increase icon size */
+    color: rgb(143, 123, 241); 
+}
+
+/* Optional: Change color on hover */
+.footer-icons-container:hover  {
+    border: 3px solid rgb(143, 123, 241);
+    color: #007BFF; /* Change to a different color on hover */
+}
+
+
+.footer-copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-size: 20px;
+}
+.footer-copyright hr{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    height: 1px;
+    background: #ef6969;
+}
+.footer-copyright p{
+    margin-right: 1000px;
+    font-size: 12px;
+}
