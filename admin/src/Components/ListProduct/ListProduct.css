@@ -1,0 +1,86 @@
+.list-product {  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    width: 100%;  
+    padding: 10px 50px;  
+    margin: 30px;  
+    border-radius: 6px;  
+    background: white;
+    max-height: 680px;  
+}  
+
+.table-container {  
+    overflow-y: auto;  
+    max-height: 500px; /* Adjust as needed */  
+    width: 100%;  
+}  
+
+.listproduct-table {  
+    width: 100%;  
+    border-collapse: collapse;  
+    margin-bottom: 3px; /* Add a bottom margin here */  
+}  
+
+.listproduct-table th, .listproduct-table td {  
+    padding: 10px;  
+    border: 1px solid #ddd;  
+    text-align: center;  
+    font-size: 15px;  
+    font-weight: 600;  
+    color: #454545;  
+    background-color: white; /* Ensure the background remains white */  
+}  
+
+/* Sticky header */  
+.listproduct-table th {  
+    position: sticky;  /* Make the header sticky */  
+    top: 0;            /* Position it at the top of the table */  
+    z-index: 1;       /* Ensure it's above the table rows */  
+}  
+
+.listproduct-product-icon {  
+    height: 100px;  
+    width: 100px;  
+    object-fit: cover;  
+}  
+
+.listproduct-remove-icon {  
+    cursor: pointer;  
+}  
+
+@media (max-width: 800px) {  
+    .list-product {  
+        box-sizing: border-box;  
+        width: 95%;  
+        padding: 10px 30px;  
+        margin: 20px auto;  
+    }  
+
+    .listproduct-table th, .listproduct-table td {  
+        font-size: 12px;  
+    }  
+
+    .listproduct-product-icon {  
+        height: 60px;  
+        width: 60px;  
+    }  
+}  
+
+@media (max-width: 500px) {  
+    .list-product {  
+        box-sizing: border-box;  
+        width: 100%;  
+        padding: 10px 30px;  
+        margin: 20px auto;  
+    }  
+
+    .listproduct-table th, .listproduct-table td {  
+        font-size: 10px;  
+    }  
+
+    .listproduct-product-icon {  
+        height: 40px;  
+        width: 40px;  
+    }  
+}
